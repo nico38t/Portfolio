@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Rapport de Stage - Nicolas Tsigris</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../Commun.css">
+</head>
+
+<body>
+    <div style="padding: 1em;">
+        <a href="/" class="btn-primary"
+            style="text-decoration:none;padding:0.7em 1.5em;border-radius:10px;background:#224664;color:#fff;font-weight:bold;box-shadow:0 2px 8px #0003;">
+            &#8592; Retour à l'accueil
+        </a>
+    </div>
+
+    <!-- Logo Ville d'Échirolles en haut en grand -->
+    <div style="text-align:center; margin-bottom: 2em;">
+        <img src="/static/images/LOGO_VILLE_ECHIROLLES.png" alt="Ville d'Échirolles"
+             style="max-width: 400px; width: 90%; height: auto; display: inline-block;">
+    </div>
+
+    <main>
+        <section class="section visible">
+            <h1>Rapport de Stage - Automatisation du Cycle de Vie des Comptes Utilisateurs</h1>
+            <div class="card">
+                <h3>Présentation du Stage</h3>
+                <p>
+                    Ce stage a été réalisé à la mairie d'Échirolles, dans le département informatique, avec pour
+                    objectif d’automatiser
+                    la gestion des comptes utilisateurs. L’enjeu principal était de synchroniser les comptes avec la
+                    base RH en
+                    utilisant LDAP Synchronization Connector (LSC).
+                </p>
+                <h3>Objectifs du Projet</h3>
+                <ul>
+                    <li>Optimiser la gestion des comptes utilisateurs.</li>
+                    <li>Mettre en place une synchronisation automatisée avec LDAP.</li>
+                    <li>Développer une interface web pour la supervision des modifications.</li>
+                    <li>Assurer une validation manuelle des changements avant application.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Ajout du rapport de stage à télécharger -->
+        <section class="section visible">
+            <h3>Rapport de stage à télécharger</h3>
+            <div class="card" style="text-align:center;">
+                <a href="https://drive.google.com/uc?export=download&id=1Y0UhRKNzZWe-Qym-6FBrKxxQkd2DYSRU"
+                    class="btn-primary"
+                    style="display:inline-block;margin:1em 0;padding:0.7em 1.5em;border-radius:10px;background:#224664;color:#fff;font-weight:bold;box-shadow:0 2px 8px #0003;text-decoration:none;">
+                    📄 Télécharger le rapport de stage (PDF)
+                </a>
+            </div>
+        </section>
+
+        <!-- Ajout des logos demandés -->
+        <section class="section visible">
+            <h3>Technologies et partenaires</h3>
+            <div class="images" style="display: flex; flex-wrap: wrap; gap: 2em; justify-content: center; align-items: center;">
+                <div class="card" style="max-width: 160px; text-align:center;">
+                    <a href="https://getbootstrap.com/docs/" target="_blank" title="Documentation Bootstrap">
+                        <img src="/static/images/Bootstrap_logo.png" alt="Bootstrap" style="width:100px;max-width:100%;margin:auto;">
+                        <div></div>
+                    </a>
+                </div>
+                <div class="card" style="max-width: 160px; text-align:center;">
+                    <a href="https://flask.palletsprojects.com/" target="_blank" title="Documentation Flask">
+                        <img src="/static/images/flask_logo.svg" alt="Flask" style="width:100px;max-width:100%;margin:auto;">
+
+                    </a>
+                </div>
+                <div class="card" style="max-width: 160px; text-align:center;">
+                    <a href="https://lsc-project.org/documentation/" target="_blank" title="Documentation LSC">
+                        <img src="/static/images/lsc_logo.png" alt="LSC" style="width:100px;max-width:100%;margin:auto;">
+                    </a>
+                </div>
+                <div class="card" style="max-width: 160px; text-align:center;">
+                    <a href="https://docs.python.org/3/" target="_blank" title="Documentation Python">
+                        <img src="/static/images/python.jpeg" alt="Python" style="width:100px;max-width:100%;margin:auto;">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section visible">
+            <h3>Technologies Utilisées</h3>
+            <div class="card">
+                <p>Le projet a été développé en utilisant les technologies suivantes :</p>
+                <ul>
+                    <li><b>Python</b> : pour le scripting et la gestion des fichiers LDIF.</li>
+                    <li><b>Flask</b> : framework web permettant la création d'une interface de gestion.</li>
+                    <li><b>LDAP Synchronization Connector (LSC)</b> : pour la synchronisation des comptes.</li>
+                    <li><b>Bootstrap</b> : pour l’interface graphique responsive et ergonomique.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section visible">
+            <h3>Déroulement du Projet</h3>
+            <div class="card">
+                <p>Le projet s'est déroulé en plusieurs phases :</p>
+                <ol>
+                    <li><b>Analyse des besoins</b> : compréhension des exigences et rédaction du cahier des charges.
+                    </li>
+                    <li><b>Développement des scripts</b> : création des fichiers LDIF et mise en place de la logique de
+                        synchronisation.</li>
+                    <li><b>Développement de l'interface web</b> : affichage des différences entre l’Active Directory et
+                        l’annuaire.</li>
+                    <li><b>Tests et validation</b> : correction des incohérences et vérification du bon fonctionnement.
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="section visible">
+            <h3>Compétences Acquises</h3>
+            <div class="card">
+                <p>Ce stage m’a permis de développer plusieurs compétences clés :</p>
+                <ul>
+                    <li>Développement web avec Flask et Bootstrap.</li>
+                    <li>Gestion des fichiers LDIF et synchronisation LDAP.</li>
+                    <li>Automatisation des processus informatiques.</li>
+                    <li>Conception d’une architecture logicielle modulaire.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section visible">
+            <h3>Résultats du Projet</h3>
+            <div class="card">
+                <p>Les principales réalisations sont :</p>
+                <ul>
+                    <li>Un système de synchronisation automatisée des comptes utilisateurs.</li>
+                    <li>Une interface web intuitive pour valider et appliquer les changements.</li>
+                    <li>Une réduction du temps de gestion des comptes et des risques d’erreurs.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section visible">
+            <h3>Conclusion</h3>
+            <div class="card">
+                <p>
+                    Ce stage m'a offert une expérience concrète dans le domaine de l'automatisation informatique et la
+                    gestion des
+                    systèmes d'information. Il m’a permis de développer des compétences essentielles en programmation,
+                    architecture
+                    logicielle et administration des systèmes. L’interface web permet aujourd’hui une gestion optimisée
+                    des comptes
+                    utilisateurs et constitue une avancée notable pour la mairie d’Échirolles.
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

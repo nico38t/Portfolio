@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Portfolio Nicolas Tsigris</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/style.css">
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="/">Nicolas Tsigris</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#projets">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#mescompetences">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary ms-3" 
+                           href="https://drive.google.com/uc?export=download&id=1hl3V-npDiwSUqwOyjCTmaQVA8JKWt0tD"
+                           download
+                           target="_blank"
+                           style="color:#fff;">
+                            Télécharger mon CV
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <img src="../static/images/photodeprofil.png" alt="Photo de Nicolas Tsigris">
+        <h1 class="display-5 fw-bold">Nicolas Tsigris</h1>
+        <p class="lead mb-3">Étudiant en BUT Informatique à Grenoble • Développeur passionné</p>
+        <a href="#contact" class="btn btn-mat btn-lg shadow-sm">Me contacter</a>
+    </section>
+
+    <!-- Projets -->
+    <section id="projets" class="container py-5">
+        <h2 class="section-title text-center">Mes Projets</h2>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <a href="/titanic" class="text-decoration-none text-dark">
+                    <div class="card h-100">
+                        <img src="../static/images/sql.png" class="card-img-top" alt="projet3">
+                        <div class="card-body">
+                            <h5 class="card-title">Création d'une base de données</h5>
+                            <p class="card-text">Conception et exploitation d'une base de données afin d'analyser le naufrage du Titanic.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <a href="/linux" class="text-decoration-none text-dark">
+                    <div class="card h-100">
+                        <img src="../static/images/VM-linux.jpg" class="card-img-top" alt="projet2">
+                        <div class="card-body">
+                            <h5 class="card-title">Installation d'un poste de développement</h5>
+                            <p class="card-text">Installation d'un environnement de développement sur une machine virtuelle Linux.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <a href="/besoin-client" class="text-decoration-none text-dark">
+                    <div class="card h-100">
+                        <img src="../static/images/besoin-client.png" class="card-img-top" alt="projet1">
+                        <div class="card-body">
+                            <h5 class="card-title">Implémentation d'un besoin client</h5>
+                            <p class="card-text">Développement d'un programme optimisé pour classer des dépêches selon différentes catégories.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <a href="/atos" class="text-decoration-none text-dark">
+                    <div class="card h-100">
+                        <img src="../static/images/SAE1.056Image.jpg" class="card-img-top" alt="projet4">
+                        <div class="card-body">
+                            <h5 class="card-title">Création du site d'une entreprise</h5>
+                            <p class="card-text">Conception et réalisation en équipe d'un nouveau site pour l'entreprise Atos ayant pour cible des jeunes de troisième.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <a href="/nutri" class="text-decoration-none text-dark">
+                    <div class="card h-100">
+                        <img src="../static/images/nutri.jpg" class="card-img-top" alt="projet5">
+                        <div class="card-body">
+                            <h5 class="card-title">Exploitation d'une base de données</h5>
+                            <p class="card-text">Tri de la base de données d'Open Food Facts afin de l'analyser pour répondre à une problématique.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- Carte stage déjà cliquable -->
+            <div class="col-md-6 col-lg-4">
+                <a href="/stage" class="text-decoration-none text-dark">
+                    <div class="card h-100">
+                        <img src="../static/images/lsc_logo.png" class="card-img-top" alt="Stage">
+                        <div class="card-body">
+                            <h5 class="card-title">Rapport de Stage - Automatisation du Cycle de Vie des Comptes Utilisateurs</h5>
+                            <p class="card-text">Stage à la mairie d'Échirolles : automatisation de la gestion des comptes utilisateurs, synchronisation LDAP, développement d'une interface web de supervision.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <a href="/bridge" class="text-decoration-none text-dark">
+                    <div class="card h-100">
+                        <img src="../static/images/logo-bridge.png" class="card-img-top" alt="BridgeGuesser">
+                        <div class="card-body">
+                            <h5 class="card-title">BridgeGuesser - Valorisation du Patrimoine</h5>
+                            <p class="card-text">Application ludique de découverte des ponts français à travers un jeu interactif.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <a href="/sae3" class="text-decoration-none text-dark">
+                    <div class="card h-100">
+                        <img src="../static/images/SAE.png" class="card-img-top" alt="SAE 4.01">
+                        <div class="card-body">
+                            <h5 class="card-title">SAE 4.01 - Gestion des Stages</h5>
+                            <p class="card-text">Optimisation d'une plateforme de gestion des stages pour l'IUT2 Grenoble, avec application mobile et interface web.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expériences -->
+    <section id="experience" class="container py-5">
+        <h2 class="section-title text-center">Expériences Professionnelles</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card h-100 d-flex flex-row align-items-center p-3">
+                    <img src="../static/images/chouette-company.png" alt="stage 3eme" style="width:80px;height:80px;object-fit:contain;margin-right:1.5em;">
+                    <div>
+                        <h5 class="card-title mb-1">Stage de 3ème</h5>
+                        <p class="mb-0">Découverte du monde informatique à La chouette company, entreprise de design informatique. J'ai pu faire du debug, de la création de logo, etc.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 p-3">
+                    <img src="../static/images/pro.jpg" alt="exp pro" style="width:80px;height:80px;object-fit:contain;float:left;margin-right:1.5em;">
+                    <div>
+                        <h5 class="card-title mb-1">Expérience professionnelle</h5>
+                        <p class="mb-1"><strong>Manœuvre Bâtiment</strong><br>
+                        <a href="https://www.astengroup.com/" target="_blank" rel="noopener">ASTEN</a> · Intérimaire<br>
+                        Juillet 2024 · Marseille, Provence-Alpes-Côte d’Azur, France</p>
+                        <ul>
+                            <li>Ponctualité et discipline</li>
+                            <li>Adaptabilité et réactivité</li>
+                            <li>Indépendance et autonomie</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mt-4 p-3">
+            <h5 class="card-title mb-1">Objectif professionnel futur</h5>
+            <p class="mb-0">Je souhaite me spécialiser dans le développement web et mobile (parcours réalisation d'applications : conception, développement, validation licence professionnelle) et faire ma 3ème année en alternance pour acquérir de l'expérience en entreprise.</p>
+        </div>
+    </section>
+
+    <!-- Compétences -->
+    <section id="mescompetences" class="container py-5">
+        <h2 class="section-title text-center">Mes Compétences</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title text-primary">Techniques</h3>
+                        <ul>
+                            <li>Développement logiciel (Java, C++)</li>
+                            <li>Connection Ldap / gestion de fichier LDIF</li>
+                            <li>Développement web (HTML, CSS, PHP, JS)</li>
+                            <li>Bases de données (PostgreSQL)</li>
+                            <li>Modélisation UML</li>
+                            <li>Gestion réseau simple</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title text-success">Transversales</h3>
+                        <ul>
+                            <li>Esprit d’initiative</li>
+                            <li>Esprit d’équipe</li>
+                            <li>Capacité à communiquer</li>
+                        </ul>
+                        <h4 class="mt-4 mb-2">Langues</h4>
+                        <div class="mb-3">
+                            <span>Anglais <strong>C1</strong></span>
+                            <div class="progress" style="height: 20px;">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">C1</div>
+                            </div>
+                        </div>
+                        <div>
+                            <span>Espagnol <strong>A2</strong></span>
+                            <div class="progress" style="height: 20px;">
+                                <div class="progress-bar bg-info" role="progressbar" style="width: 35%;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">A2</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title text-warning">Domaines</h3>
+                        <ul>
+                            <li>Développement d’applications, test et intégration</li>
+                            <li>Interfaces ergonomiques et accessibles</li>
+                            <li>Conduite de projet (classique ou agile)</li>
+                            <li>Analyse des besoins métier</li>
+                            <li>Travail collaboratif et communication efficace</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="container py-5">
+        <h2 class="section-title text-center">Contact</h2>
+        <form method="post" class="mx-auto" style="max-width:500px;">
+            <textarea name="message" placeholder="Votre message" required></textarea>
+            <input type="text" name="name" maxlength="25" placeholder="Votre nom" required>
+            <input type="text" name="first_name" maxlength="25" placeholder="Votre prénom" required>
+            <input type="email" name="mail" placeholder="Votre adresse Email" required>
+            <input type="tel" name="phone_number" placeholder="Votre numéro de téléphone" minlength="10" maxlength="10" required>
+            <textarea name="object" placeholder="Objet du message"></textarea>
+            <input type="submit" value="Envoyer">
+        </form>
+        
+    </section>
+
+    <footer class="footer">
+        <div class="socials mt-4">
+            <a href="https://discord.gg/2Ctq5VPsQD"><img src="../static/images/discordLogo.jpg" alt="Discord"></a>
+            <a href="https://github.com/nico38t"><img src="../static/images/githubLogo.png" alt="Github"></a>
+            <a href="https://www.linkedin.com/in/nicolas-tsigris-0432661ba/"><img src="../static/images/linkedin.png"
+                    alt="LinkedIn"></a>
+        </div>
+        <div>© 2025 Nicolas Tsigris - Portfolio</div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

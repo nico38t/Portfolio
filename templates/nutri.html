@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Exploitation d'une base de données</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../Header.css">
+    <link rel="stylesheet" type="text/css" href="../Footer.css">
+    <link rel="stylesheet" type="text/css" href="../Commun.css">
+</head>
+<body>
+    <div style="padding: 1em;">
+        <a href="/" class="btn-primary"
+            style="text-decoration:none;padding:0.7em 1.5em;border-radius:10px;background:#224664;color:#fff;font-weight:bold;box-shadow:0 2px 8px #0003;">&#8592;
+            Retour à l'accueil</a>
+    </div>
+
+    <main>
+        <section class="section visible">
+            <h1>Exploitation d'une base de données</h1>
+            <div class="card">
+                <h3>Mission</h3>
+                <p>Tri de la base de données d'Open Food Facts pour conserver uniquement les informations relatives aux plats uniques (one-dish meals) aux États-Unis. Création de graphiques basés sur ces données.</p>
+                <h3>But</h3>
+                <p>Analyser les liens entre le nutri-score des plats uniques (produits sélectionnés uniquement aux États-Unis) et leur composition (glucides, sucre, etc.).</p>
+                <h3>Nombre de participants</h3>
+                <p>2 personnes</p>
+            </div>
+            <div class="card">
+                <h3>Travail effectué par tout le monde</h3>
+                <p class="longParagraphe">Notre projet s'est déroulé en trois étapes. La première étape consistait à explorer la base de données SQL d'Open Food Facts et à la nettoyer des données non pertinentes. Nous avons élaboré une requête SQL commune pour extraire uniquement les informations sur les plats uniques aux États-Unis, en respectant certaines contraintes (suppression des lignes avec des informations manquantes, marquage du caractère végétarien des plats, etc.). Nous avons ensuite exporté ces données dans un fichier CSV pour une analyse ultérieure.</p>
+                <p class="longParagraphe">La deuxième étape impliquait l'exploitation des données. Nous avons produit divers graphiques à l'aide du logiciel R Studio pour identifier les liens entre la composition des plats uniques et leur nutri-score, c'est-à-dire leur impact sur la santé. Chaque graphique a été commenté en anglais, avec des conclusions partielles pour chaque sous-partie de l'analyse, ainsi qu'une conclusion finale.</p>
+                <p class="longParagraphe">Enfin, la troisième étape consistait à identifier les contraintes du projet, les risques associés, leur criticité, et à élaborer une stratégie de mitigation des risques. Nous avons créé une matrice de criticité pour identifier les contraintes les plus sensibles et avons détaillé le processus de gestion d'une contrainte spécifique via un schéma.</p>
+            </div>
+            <div class="card">
+                <h3>Travail que j'ai effectué</h3>
+                <p class="longParagraphe">Dans la première phase du projet, mon coéquipier et moi avons principalement travaillé ensemble pour concevoir la requête SQL finale, répondant à toutes les contraintes. Cependant, j'ai pris en charge la rédaction des clauses "CASE" de la requête, qui amélioraient la lisibilité du résultat exporté. Chaque clause attribuait une lettre aux attributs tels que "vegan" ou "végétarien" en fonction des informations de la colonne "ingredients_analysis_tags" de la base de données.</p>
+                <p class="longParagraphe">Pour l'analyse des données, j'ai principalement commenté les graphiques et proposé des idées de graphiques à mon coéquipier. J'ai formulé en anglais les observations sur les liens (ou leur absence) que nous avions mis en évidence grâce aux graphiques.</p>
+                <p class="longParagraphe">Enfin, j'ai surtout contribué à l'analyse du cycle de gestion de la contrainte choisie. J'ai réalisé un schéma montrant notre approche pour gérer le risque associé à cette contrainte, et précisant si la contrainte elle-même induit un risque nécessitant une gestion supplémentaire.</p>
+            </div>
+            <div class="card">
+                <h3>Ressources</h3>
+                <p>Images ci-dessous</p>
+            </div>
+        </section>
+        <section class="section visible">
+            <h3>Compétences du programme national</h3>
+            <ul>
+                <li>Visualiser des données</li>
+            </ul>
+        </section>
+        <hr>
+        <section class="section visible">
+            <div class="images" style="display: flex; flex-wrap: wrap; gap: 2em; justify-content: center;">
+                <div class="card" style="max-width: 300px;">
+                    <a href="../static/images/requete sql.png" target="_blank"><img src="../static/images/requete sql.png" alt="Requête SQL" style="width:100%;border-radius:12px;"></a>
+                    <h4>Requête SQL pour le tri</h4>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+</body>
+</html>
