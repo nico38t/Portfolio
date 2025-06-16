@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>AutoSMS - Envoi Automatisé de SMS</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="Commun.css">
+</head>
+<body>
+    <div style="padding: 1em;">
+        <a href="index.html" class="btn-primary"
+            style="text-decoration:none;padding:0.7em 1.5em;border-radius:10px;background:#224664;color:#fff;font-weight:bold;box-shadow:0 2px 8px #0003;">
+            &#8592; Retour à l'accueil
+        </a>
+    </div>
+
+    <div style="text-align:center; margin-bottom: 2em;">
+        <img src="Images/smspartner.png" alt="AutoSMS Logo"
+             style="max-width: 300px; width: 90%; height: auto; display: inline-block;">
+    </div>
+
+    <main>
+        <section class="section visible">
+            <h1>AutoSMS - Envoi Automatisé de SMS</h1>
+            <div class="card">
+                <h3>Présentation du Projet</h3>
+                <p>
+                    AutoSMS est une application Python dotée d'une interface graphique moderne permettant d'envoyer des SMS personnalisés à des groupes de contacts à partir d'un fichier Excel. Elle automatise la gestion des relances et l'archivage des envois, facilitant la communication professionnelle avec les clients.
+                </p>
+            </div>
+        </section>
+
+        <section class="section visible">
+            <h3>Objectifs du Projet</h3>
+            <div class="card">
+                <ul>
+                    <li>Envoyer des SMS personnalisés à plusieurs destinataires depuis une interface conviviale.</li>
+                    <li>Automatiser les relances de devis selon la date d'envoi.</li>
+                    <li>Gérer l'historique des envois et archiver les anciens messages.</li>
+                    <li>Afficher le crédit SMS restant en temps réel.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section visible">
+            <h3>Fonctionnalités principales</h3>
+            <div class="card">
+                <ul>
+                    <li>Chargement des contacts depuis un fichier Excel filtré par statut.</li>
+                    <li>Sélection intelligente et gestion de groupes de destinataires.</li>
+                    <li>Personnalisation des messages avec insertion automatique du nom, prénom, et date de devis.</li>
+                    <li>Envoi des SMS via l'API SMSPartner.</li>
+                    <li>Relance automatique des clients selon la date d'envoi du devis.</li>
+                    <li>Archivage automatique des envois de plus de 30 jours.</li>
+                    <li>Affichage du crédit SMS restant et gestion des erreurs d'envoi.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section visible">
+            <h3>Technologies utilisées</h3>
+            <div class="Images" style="display: flex; flex-wrap: wrap; gap: 2em; justify-content: center; align-items: center;">
+                <div class="card" style="max-width: 160px; text-align:center;">
+                    <a href="https://www.python.org/" target="_blank" rel="noopener">
+                        <img src="Images/python.jpeg" alt="Python" style="width:100px;max-width:100%;margin:auto;">
+                    </a>
+                    <div>Python</div>
+                </div>
+                <div class="card" style="max-width: 160px; text-align:center;">
+                    <a href="https://docs.python.org/3/library/tkinter.html" target="_blank" rel="noopener">
+                        <img src="Images/tkinter.png" alt="Tkinter" style="width:100px;max-width:100%;margin:auto;">
+                    </a>
+                    <div>Tkinter</div>
+                </div>
+                <div class="card" style="max-width: 160px; text-align:center;">
+                    <a href="https://www.microsoft.com/fr-fr/microsoft-365/excel" target="_blank" rel="noopener">
+                        <img src="Images/excel.png" alt="Excel" style="width:100px;max-width:100%;margin:auto;">
+                    </a>
+                    <div>Excel</div>
+                </div>
+                <div class="card" style="max-width: 160px; text-align:center;">
+                    <a href="https://www.smspartner.fr/" target="_blank" rel="noopener">
+                        <img src="Images/api.png" alt="API" style="width:100px;max-width:100%;margin:auto;">
+                    </a>
+                    <div>API SMSPartner</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section visible">
+            <h3>Déroulement du Projet</h3>
+            <div class="card">
+                <ol>
+                    <li>Analyse des besoins pour la gestion automatisée des SMS et des relances.</li>
+                    <li>Développement de modules Python pour l'envoi de SMS (<code>sender.py</code>), la gestion des données (<code>data_loader.py</code>), et la configuration (<code>config.py</code>).</li>
+                    <li>Création d'une interface graphique moderne avec Tkinter (<code>interface.py</code>).</li>
+                    <li>Implémentation de l'archivage automatique et de la gestion du crédit SMS.</li>
+                    <li>Tests fonctionnels et validation de la robustesse de l'application.</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="section visible">
+            <h3>Compétences développées</h3>
+            <div class="card">
+                <ul>
+                    <li>Développement d'interfaces graphiques en Python (Tkinter).</li>
+                    <li>Utilisation d'API externes pour l'envoi de SMS.</li>
+                    <li>Gestion de fichiers Excel et JSON.</li>
+                    <li>Automatisation de tâches et archivage de données.</li>
+                    <li>Gestion d'erreurs et robustesse logicielle.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section visible">
+            <h3>Résultats</h3>
+            <div class="card">
+                <ul>
+                    <li>Une application fiable pour l'envoi groupé et automatisé de SMS professionnels.</li>
+                    <li>Un gain de temps significatif dans la gestion des relances clients.</li>
+                    <li>Une interface ergonomique adaptée à un usage quotidien.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section visible">
+            <h3>Conclusion</h3>
+            <div class="card">
+                <p>
+                    AutoSMS répond à un besoin concret d'automatisation de la communication par SMS avec les clients. Grâce à son interface intuitive et ses fonctionnalités avancées, elle facilite la gestion des relances et optimise le suivi des envois, tout en assurant la traçabilité et l'archivage des opérations.
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
