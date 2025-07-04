@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Projet ASTEN - Nicolas Tsigris</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="Commun.css">
+</head>
+
+<body>
+    <div style="padding: 1em;">
+        <a href="index.html" class="btn-primary"
+            style="text-decoration:none;padding:0.7em 1.5em;border-radius:10px;background:#224664;color:#fff;font-weight:bold;box-shadow:0 2px 8px #0003;">
+            &#8592; Retour à l'accueil
+        </a>
+    </div>
+
+    <!-- Logo ASTEN en haut en grand -->
+    <div style="text-align:center; margin-bottom: 2em;">
+        <img src="Images/logo asten.png" alt="ASTEN"
+             style="max-width: 400px; width: 90%; height: auto; display: inline-block;">
+    </div>
+
+    <main>
+        <section class="section visible">
+            <h1>Projet pour ASTEN - Générateur de Planning</h1>
+            <div class="card">
+                <h3>Présentation du Projet</h3>
+                <p>
+                    Ce projet est une application de génération automatique de plannings Excel développée pour automatiser
+                    la création de plannings de chantier à partir de fichiers DPGF (Devis).
+                    Ce projet vise à optimiser le processus de planification dans le secteur du BTP en proposant une solution
+                    moderne et intuitive.
+                </p>
+                <h3>Objectifs du Projet</h3>
+                <ul>
+                    <li>Automatiser la génération de plannings Excel à partir de données DPGF.</li>
+                    <li>Développer une interface utilisateur moderne et professionnelle.</li>
+                    <li>Créer un exécutable autonome pour une distribution facile.</li>
+                    <li>Optimiser les processus de planification dans le BTP.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section Fonctionnalités -->
+        <section class="section visible">
+            <h3>Fonctionnalités Principales</h3>
+            <div class="card">
+                <ul>
+                    <li><b>Interface moderne et professionnelle</b> avec configuration personnalisable</li>
+                    <li><b>Durée de chantier personnalisable</b> (1 à 52 semaines)</li>
+                    <li><b>Date de début configurable</b> avec validation automatique des lundis</li>
+                    <li><b>Types de documents multiples</b> : Planning prévisionnel et Rapport d'avancement</li>
+                    <li><b>En-têtes de mois</b> au-dessus des semaines pour une meilleure lisibilité</li>
+                    <li><b>Weekends grisés</b> et couleurs distinctes par feuille</li>
+                    <li><b>Sauvegarde automatique</b> dans le dossier Téléchargements</li>
+                    <li><b>Aperçu des données</b> avant génération</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section Technologies -->
+        <section class="section visible">
+            <h3>Technologies et outils utilisés</h3>
+            <div class="Images" style="display: flex; flex-wrap: wrap; gap: 2em; justify-content: center; align-items: center;">
+                <div class="card" style="max-width: 160px; text-align:center;">
+                    <a href="https://docs.python.org/3/" target="_blank" title="Documentation Python">
+                        <img src="Images/python.jpeg" alt="Python" style="width:100px;max-width:100%;margin:auto;">
+                    </a>
+                </div>
+                <div class="card" style="max-width: 160px; text-align:center;">
+                    <a href="https://docs.python.org/3/library/tkinter.html" target="_blank" title="Documentation Tkinter">
+                        <img src="Images/tkinter.png" alt="Tkinter" style="width:100px;max-width:100%;margin:auto;">
+                    </a>
+                </div>
+                <div class="card" style="max-width: 160px; text-align:center;">
+                    <a href="https://openpyxl.readthedocs.io/" target="_blank" title="Documentation OpenPyXL">
+                        <img src="Images/openpyxl.png" alt="OpenPyXL" style="width:100px;max-width:100%;margin:auto;">
+                    </a>
+                </div>
+                <div class="card" style="max-width: 160px; text-align:center;">
+                    <a href="https://pyinstaller.org/" target="_blank" title="Documentation PyInstaller">
+                        <img src="Images/pyinstaller.png" alt="PyInstaller" style="width:100px;max-width:100%;margin:auto;">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section visible">
+            <h3>Technologies Détaillées</h3>
+            <div class="card">
+                <p>Le projet a été développé en utilisant les technologies suivantes :</p>
+                <ul>
+                    <li><b>Python 3.7+</b> : langage principal pour la logique applicative et le traitement des données.</li>
+                    <li><b>Tkinter</b> : interface graphique native pour une expérience utilisateur moderne et stable.</li>
+                    <li><b>OpenPyXL</b> : manipulation et génération de fichiers Excel avec formatage avancé.</li>
+                    <li><b>PyInstaller</b> : création d'exécutables autonomes pour une distribution simplifiée.</li>
+                    <li><b>PIL (Pillow)</b> : gestion des images et logos dans l'interface.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section visible">
+            <h3>Architecture du Projet</h3>
+            <div class="card">
+                <p>Le projet suit une architecture modulaire bien structurée :</p>
+                <ol>
+                    <li><b>main.py</b> : point d'entrée principal de l'application</li>
+                    <li><b>ui_stable.py</b> : interface utilisateur moderne et stable</li>
+                    <li><b>excel_parser.py</b> : module de lecture et traitement des fichiers Excel</li>
+                    <li><b>planning_generator_v3.py</b> : moteur de génération des plannings</li>
+                    <li><b>cEtude_generator.py</b> : générateur d'études et de rapports</li>
+                    <li><b>build_all.bat</b> : script de compilation automatisée</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="section visible">
+            <h3>Processus de Développement</h3>
+            <div class="card">
+                <p>Le développement s'est organisé autour de plusieurs phases clés :</p>
+                <ol>
+                    <li><b>Analyse des besoins</b> : étude des processus de planification dans le BTP</li>
+                    <li><b>Conception de l'architecture</b> : définition des modules et de leurs interactions</li>
+                    <li><b>Développement de l'interface</b> : création d'une UI moderne avec Tkinter</li>
+                    <li><b>Implémentation des algorithmes</b> : logique de génération des plannings</li>
+                    <li><b>Tests et optimisation</b> : validation sur différents types de projets</li>
+                    <li><b>Packaging et distribution</b> : création d'exécutables autonomes</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="section visible">
+            <h3>Défis Techniques Relevés</h3>
+            <div class="card">
+                <p>Ce projet m'a permis de surmonter plusieurs défis techniques :</p>
+                <ul>
+                    <li><b>Gestion de la complexité</b> : architecture modulaire pour un code maintenable</li>
+                    <li><b>Interface utilisateur</b> : création d'une UI moderne avec Tkinter natif</li>
+                    <li><b>Formatage Excel avancé</b> : gestion des styles, couleurs et mise en forme</li>
+                    <li><b>Distribution d'application</b> : création d'exécutables avec PyInstaller</li>
+                    <li><b>Gestion des erreurs</b> : robustesse et validation des données utilisateur</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section visible">
+            <h3>Résultats et Impact</h3>
+            <div class="card">
+                <p>Les principales réalisations du projet :</p>
+                <ul>
+                    <li><b>Application fonctionnelle</b> : génération automatique de plannings professionnels</li>
+                    <li><b>Interface intuitive</b> : facilité d'utilisation pour les non-techniciens</li>
+                    <li><b>Exécutable autonome</b> : distribution simple sans installation Python</li>
+                    <li><b>Gain de temps significatif</b> : automatisation d'un processus manuel fastidieux</li>
+                    <li><b>Code source documenté</b> : architecture claire et maintenable</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section visible">
+            <h3>Compétences Développées</h3>
+            <div class="card">
+                <p>Ce projet m'a permis de développer et renforcer mes compétences en :</p>
+                <ul>
+                    <li><b>Développement Python avancé</b> : POO, gestion des modules, architecture logicielle</li>
+                    <li><b>Interface utilisateur</b> : design moderne avec Tkinter, UX/UI</li>
+                    <li><b>Manipulation de données</b> : traitement Excel, validation, formatage</li>
+                    <li><b>DevOps</b> : automatisation du build, packaging d'applications</li>
+                    <li><b>Gestion de projet</b> : planification, versioning, documentation</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section visible">
+            <h3>Conclusion</h3>
+            <div class="card">
+                <p>
+                    Cette application représente une solution complète d'automatisation pour la génération de plannings 
+                    de chantier. Cette solution permet d'automatiser efficacement la création de plannings professionnels à partir de données DPGF(Un Devis), 
+                    en facilitant le travail des utilisateurs du secteur BTP. L'application propose une interface moderne, 
+                    une génération rapide et fiable des documents, et contribue à améliorer la productivité en simplifiant 
+                    un processus auparavant manuel et chronophage.
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
